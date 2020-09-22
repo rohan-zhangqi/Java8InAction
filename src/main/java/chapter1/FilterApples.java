@@ -9,6 +9,7 @@ import java.util.function.Predicate;
  * @date 2020/8/30 5:07 下午
  */
 public class FilterApples {
+
     static List<Apple> filterApples(List<Apple> inventory, Predicate<Apple> p) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) {

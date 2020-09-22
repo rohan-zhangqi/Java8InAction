@@ -36,6 +36,8 @@ public class TransactionFilterByCurrencies {
                 .filter((Transaction t) -> t.getPrice() > 1000)
                 .collect(groupingBy(Transaction::getCurrency));
 
-        System.out.println();
+        transactionsByCurrencies.forEach((key, value) -> {
+            System.out.println(key + ":" + value);
+        });
     }
 }
