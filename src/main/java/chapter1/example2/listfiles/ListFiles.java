@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1.example2.listfiles;
 
 import java.io.File;
 import java.io.FileFilter;

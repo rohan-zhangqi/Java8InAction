@@ -1,4 +1,6 @@
-package chapter1;
+package chapter1.example3.parallelstream;
+
+import chapter1.Apple;
 
 import java.util.ArrayList;
 import java.util.List;
