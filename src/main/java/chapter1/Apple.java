@@ -1,5 +1,7 @@
 package chapter1;
 
+import java.util.Objects;
+
 /**
  * @author zhangqi
  * @date 2020/8/30 5:10 下午
@@ -24,6 +26,24 @@ public class Apple {
     @Override
     public String toString() {
         return "apple {weight:" + this.getWeight() + ", color:" + this.getColor() + "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Apple apple = (Apple)o;
+        return Objects.equals(weight, apple.weight) &&
+                Objects.equals(color, apple.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(weight, color);
     }
 
     public Integer getWeight() {

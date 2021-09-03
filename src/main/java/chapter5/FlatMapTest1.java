@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  * @description: TODO
  * @date 2020/10/14 17:32
  */
-public class FaltMapTest1 {
+public class FlatMapTest1 {
     public static void main(String[] args) {
         List<Integer> number1 = Arrays.asList(1,2,3);
         List<Integer> number2 = Arrays.asList(3,4);
