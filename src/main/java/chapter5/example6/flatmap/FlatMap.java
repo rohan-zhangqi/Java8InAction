@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static java.util.stream.Collectors.toList;
-
 /**
  * 给定单词列表["Hello","World"]，将其转换为["H","e","l","o","w","r","d",]。
  * @author zhangqi
